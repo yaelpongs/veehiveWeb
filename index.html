@@ -8,37 +8,26 @@
 </head>
 <body>
   <header class="appbar">
-  <div class="brand">
-    <!-- use exact filename veehive-logo.png in same folder -->
-    <img id="logoImg" src="veehivelogo.png" alt="Veehive logo" class="logo-img" />
-    <!-- SVG fallback (hidden by default) -->
-    <svg id="logo-fallback" class="logo-fallback" viewBox="0 0 120 120" aria-hidden="true" style="display:none;">
-      <rect width="120" height="120" rx="8" fill="#007DFC"></rect>
-      <g transform="translate(12,12) scale(0.8)" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M7 32c0-14 11-25 25-25s25 11 25 25-11 25-25 25S7 46 7 32z" />
-        <path d="M12 36h48" />
-      </g>
-    </svg>
-
-    <div class="titles">
-      <h1 class="app-title">Veehive</h1>
-      <p class="app-sub">Policies & Compliance</p>
+    <div class="brand">
+      <img id="logoImg" src="veehivelogo.png" alt="Veehive logo" class="logo-img" />
+      <svg id="logo-fallback" class="logo-fallback" viewBox="0 0 120 120" aria-hidden="true" style="display:none;">
+        <rect width="120" height="120" rx="8" fill="#007DFC"></rect>
+      </svg>
+      <div class="titles">
+        <h1 class="app-title">Veehive</h1>
+        <p class="app-sub">Policies & Compliance</p>
+      </div>
     </div>
-  </div>
 
-  <div class="appbar-actions">
-    <button id="printBtn" class="btn btn-outline" title="Print or save this page as PDF">Print / Save PDF</button>
-  </div>
-</header>
+    <div class="appbar-actions">
+      <button id="printBtn" class="btn btn-outline" title="Print or save this page as PDF">Print / Save PDF</button>
+    </div>
+  </header>
 
   <nav class="tabs" role="tablist" aria-label="Policies">
-    <button class="tab active" role="tab" aria-selected="true" aria-controls="privacyPanel" id="privacyTab">
-      Privacy & Security
-    </button>
-    <button class="tab" role="tab" aria-selected="false" aria-controls="disputePanel" id="disputeTab">
-      Dispute Resolution & Claims
-    </button>
-    <!-- search removed -->
+    <button class="tab active" role="tab" aria-selected="true" aria-controls="privacyPanel" id="privacyTab">Privacy Policy</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="disputePanel" id="disputeTab">Dispute Policy</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="termsPanel" id="termsTab">Terms of Service</button>
   </nav>
 
   <main class="container">
@@ -89,7 +78,7 @@
           <p>Where personal data is processed or stored outside the Philippines (e.g., cloud services), we implement contractual safeguards consistent with NPC Advisory No. 2024-01 on Model Contractual Clauses (MCCs) and remain accountable for such transfers. We ensure appropriate organizational, physical, and technical measures accompany the data.</p>
 
           <h3>8. Retention</h3>
-          <p>We retain personal data only for as long as necessary for the stated purposes and to meet legal, accounting, and security requirements. We apply defined retention schedules (e.g., booking records retained [5] years; account data retained until deletion plus [12] months for audit; verification images retained for [3] months unless required by law).</p>
+          <p>We retain personal data only for as long as necessary for the stated purposes and to meet legal, accounting, and security requirements. We apply defined retention schedules (e.g., booking records retained [X] years; account data retained until deletion plus [Y] months for audit; verification images retained for [Z] months unless required by law).</p>
 
           <h3>9. Security Measures</h3>
           <p>We implement organizational, physical, and technical safeguards appropriate to the risks (e.g., access controls, encryption in transit and at rest where applicable, role-based permissions, audit logs, vulnerability management). We follow RA 10173 IRR Rule VI and relevant NPC circulars.</p>
@@ -113,10 +102,10 @@
           <p>Third-party services (e.g., sign-in, maps) have their own policies. We are not responsible for their practices. Review those policies before use.</p>
 
           <h3>16. Contact Details</h3>
-          <p>Data Protection Officer (DPO): John Harold Sepayla<br>
-          Email: resane01@gmail.com<br>
-          Address: Poblacion Ward 2, Minglanilla Cebu<br>
-          Phone: 09462623096</p>
+          <p>Data Protection Officer (DPO): [Full Name]<br>
+          Email: [privacy@company]<br>
+          Address: [Registered Address]<br>
+          Phone: [Number]</p>
 
           <h3>17. Changes to This Policy</h3>
           <p>We may update this Policy to reflect legal, technical, or business changes. Material updates will be notified via email/in-app. Continued use after the effective date constitutes acceptance.</p>
@@ -141,13 +130,13 @@
         </header>
 
         <div class="policy-content">
-          <p>This Policy explains how disputes and claims are handled between Renters, Owners, and VeeHive. It complements the Terms of Services and applies to cancellations, refunds, damages, violations, and conduct issues on the Veehive platform.</p>
+          <p>This Policy explains how disputes and claims are handled between Renters, Owners, and [Company Legal Name]. It complements the Terms of Service (§17) and applies to cancellations, refunds, damages, violations, and conduct issues on the Veehive platform.</p>
 
           <h3>1) Scope</h3>
           <p>Covers disputes arising from bookings, vehicle condition, delays, cancellations, refunds, damage claims, tolls, fines, and platform rule violations.</p>
 
           <h3>2) Evidence & Documentation</h3>
-          <p>Submit relevant evidence via the app within [7] days: booking details, photos/videos (pickup/return), chat logs, receipts, police or incident reports, OR/CR/insurance copies, and any witness statements.</p>
+          <p>Submit relevant evidence via the app within [X] days: booking details, photos/videos (pickup/return), chat logs, receipts, police or incident reports, OR/CR/insurance copies, and any witness statements.</p>
 
           <h3>3) Initial Resolution (Owner ↔ Renter)</h3>
           <p>Parties must first attempt good-faith resolution via in-app chat within [48] hours of issue discovery, keeping communications civil and factual.</p>
@@ -182,14 +171,14 @@
           <h3>13) Timelines</h3>
           <ul>
             <li>Report issues: within [48] hours of pickup/return or discovery.</li>
-            <li>Submit evidence: within [7] days of case opening.</li>
-            <li>Platform decision: typically within [5] business days after evidence is complete.</li>
-            <li>Mediation: initiated within [7] days of decision if requested.</li>
+            <li>Submit evidence: within [X] days of case opening.</li>
+            <li>Platform decision: typically within [Y] business days after evidence is complete.</li>
+            <li>Mediation: initiated within [Z] days of decision if requested.</li>
             <li>Arbitration: filed within [30] days after failed mediation, subject to applicable limitation periods.</li>
           </ul>
 
           <h3>14) Changes & Contact</h3>
-          <p>We may update this Policy. Material changes will be notified. Contact: resane01@gmail.com.</p>
+          <p>We may update this Policy. Material changes will be notified. Contact: [support@company] / [legal@company].</p>
 
           <h3>References</h3>
           <ul>
@@ -200,12 +189,122 @@
         </div>
       </article>
     </section>
+
+    <section id="termsPanel" role="tabpanel" aria-labelledby="termsTab" class="panel">
+      <article class="card">
+        <header class="section-header">
+          <h2>Veehive Terms of Service</h2>
+          <p class="meta">Last updated: 2025-10-23</p>
+        </header>
+
+        <div class="policy-content">
+          <!-- Terms content (kept as previously added) -->
+          <p>These Terms of Service ("Terms") govern your use of the Veehive mobile application, website, and related services (the "Service") operated by Veehive ("Company").</p>
+
+          <h3>1) Acceptance of Terms</h3>
+          <p>You must be at least 18 years old and capable of forming a binding contract to use the Service. Electronic agreements and signatures are valid under RA 8792 (Electronic Commerce Act).</p>
+
+          <h3>2) Accounts & Eligibility</h3>
+          <p>Provide accurate information and keep credentials secure. We may require identity verification (driver’s license) and vehicle documents (OR/CR) for Owners. Accounts may be declined or revoked for non-compliance or security risks.</p>
+
+          <h3>3) Verification & Compliance</h3>
+          <p>Owners must ensure vehicles are duly registered, insured, roadworthy, and compliant with local regulations. Renters must hold a valid driver’s license and operate vehicles lawfully and safely.</p>
+
+          <h3>4) Listings & Content</h3>
+          <p>Owners are solely responsible for the accuracy and legality of listings. We may moderate or remove content that violates policies or law. You grant us a non-exclusive license to host and display your listing content in connection with the Service.</p>
+
+          <h3>5) Booking & Use of Vehicles</h3>
+          <p>Bookings are requests until accepted by Owners. Pickup/return times, rates, mileage, fuel, cleaning, and penalties (e.g., late return fees) are set by Owners subject to platform rules. Double-booking prevention relies on real-time availability updates.</p>
+
+          <h3>6) Fees & Payments</h3>
+          <p>If/when payments are enabled, you agree to pay applicable rental fees, platform fees, taxes, and charges. Card processing will be handled by approved processors; we will not store card PANs. Merchants must comply with PCI DSS if cardholder data is processed.</p>
+
+          <h3>7) Messaging & Notifications</h3>
+          <p>In-app chat is provided for coordination. We may send emails, SMS, and push notifications for bookings, status changes, and updates. See Privacy Policy for processing details.</p>
+
+          <h3>8) User Conduct</h3>
+          <p>Do not misuse the Service, engage in fraud, unsafe driving, harassment, or upload illegal/infringing content. Respect local laws, traffic rules, and platform policies.</p>
+
+          <h3>9) Ratings & Reviews</h3>
+          <p>Provide truthful, relevant feedback. We may remove defamatory or policy-violating content.</p>
+
+          <h3>10) Intellectual Property</h3>
+          <p>The Service, including trademarks, code, and design, is owned by Veehive. You receive a limited, non-transferable, revocable license to use the app.</p>
+
+          <h3>11) Disclaimers</h3>
+          <p>The Service is provided "as is". We do not warrant the condition, legality, or suitability of vehicles. We are not a party to user-to-user contracts and do not provide insurance or roadside assistance unless expressly stated.</p>
+
+          <h3>12) Privacy & Data</h3>
+          <p>Your use of the Service is subject to our Privacy Policy. We process personal data in accordance with RA 10173 and its IRR, with breach notifications per Rule IX.</p>
+
+          <h3>13) Limitation of Liability</h3>
+          <p>To the maximum extent permitted by law, Veehive is not liable for user-to-user transactions, indirect or consequential losses, service interruptions, content posted by users, GPS inaccuracies, or actions taken in good faith to comply with privacy law. In all cases, Veehive’s aggregate liability is capped at the greater of (i) PHP 3 months of fees or (ii) fees you paid in the prior 3 months. This does not limit liability where prohibited by law.</p>
+
+          <h3>14) Indemnification</h3>
+          <p>You agree to defend, indemnify, and hold harmless [Company] against claims arising from your use, listings, rentals, documents, breaches, or third-party claims related to your content or actions.</p>
+
+          <h3>15) Termination & Suspension</h3>
+          <p>We may suspend or terminate for breaches, security risks, legal compliance, or inactivity. You may delete your account at any time. Certain obligations survive termination.</p>
+
+          <h3>16) Governing Law & Venue</h3>
+          <p>Philippine law governs these Terms. Non-arbitrable proceedings shall be filed exclusively in the courts of Cebu City, Philippines. Electronic records and signatures are valid under RA 8792.</p>
+
+          <h3>17) Binding Arbitration & ADR</h3>
+          <p>Except for injunctive/statutory relief, disputes shall be resolved by confidential binding arbitration under RA 9285 (ADR Act) before a single arbitrator under [Institution Rules, e.g., PDRCI]. Seat: Cebu City, Philippines. Language: English (or Filipino if agreed). Parties shall first attempt good-faith mediation for 30 days.</p>
+
+          <h3>18) Electronic Communications & Notices</h3>
+          <p>You consent to electronic communications. Formal notices: resane01@gmail.com and Poblacion Ward 2, Minglanilla Cebu.</p>
+
+          <h3>19) App Store Terms</h3>
+          <p>Apple/Google are not responsible for support or warranties. Your app license is limited and revocable; you must comply with store terms.</p>
+
+          <h3>20) Force Majeure</h3>
+          <p>No party is liable for delays/failures due to events beyond reasonable control, including cloud outages and NPC directives.</p>
+
+          <h3>21) Assignment</h3>
+          <p>You may not assign without consent. We may assign with notice (e.g., acquisition).</p>
+
+          <h3>22) Entire Agreement; Severability; No Waiver</h3>
+          <p>These Terms and referenced policies constitute the entire agreement. If any provision is invalid, the remainder remains in effect. No waiver unless written.</p>
+
+          <h3>23) Changes to Terms</h3>
+          <p>We may update these Terms for legal/technical/business reasons. Material changes will be notified; continued use constitutes acceptance.</p>
+
+          <h3>24) Third-Party Services & Links</h3>
+          <p>Third-party services/SDKs have separate terms and policies. We are not responsible for them.</p>
+
+          <h3>25) Insurance & Compliance (Owners)</h3>
+          <p>Owners must maintain valid registration, insurance, and compliance. The platform is not an insurer.</p>
+
+          <h3>26) User Safety & Vehicle Use</h3>
+          <p>Renters must drive lawfully, follow Owner rules, and report incidents promptly.</p>
+
+          <h3>27) Ratings & Reviews</h3>
+          <p>We may moderate/remove violating content.</p>
+
+          <h3>28) Export Controls & Sanctions</h3>
+          <p>You are not subject to sanctions and will not use the Service in violation of export/sanctions rules.</p>
+
+          <h3>29) Feedback</h3>
+          <p>Feedback may be used to improve the Service without compensation.</p>
+
+          <h3>30) Beta Features</h3>
+          <p>Beta features are provided as-is and may change or be withdrawn.</p>
+
+          <h3>31) Contact</h3>
+          <p>Veehive<br>Poblacion Ward 2, Minglanilla Cebu<br>Email: resane01@gmail.com<br>Phone: 09462623096</p>
+
+          <h3>32) Survival</h3>
+          <p>Sections concerning payments, privacy, IP, limitation of liability, indemnification, dispute resolution, assignment, and survival remain in effect following termination.</p>
+        </div>
+      </article>
+    </section>
   </main>
 
   <nav class="bottom-nav" aria-label="Primary">
     <button class="bn-item active" data-target="privacyPanel" aria-label="Privacy">Privacy</button>
     <button class="bn-item" data-target="disputePanel" aria-label="Disputes">Disputes</button>
-    <button class="bn-item" aria-label="Settings" onclick="alert('Settings screen is coming soon!')">Settings</button>
+    <button class="bn-item" data-target="termsPanel" aria-label="Terms">Terms</button>
   </nav>
 
   <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">↑</button>

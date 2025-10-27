@@ -1,9 +1,12 @@
-// Tab elements
+// Tab elements (added termsTab and termsPanel)
 const privacyTab = document.getElementById('privacyTab');
 const disputeTab = document.getElementById('disputeTab');
+const termsTab = document.getElementById('termsTab');
+
 const panels = {
   privacyPanel: document.getElementById('privacyPanel'),
-  disputePanel: document.getElementById('disputePanel')
+  disputePanel: document.getElementById('disputePanel'),
+  termsPanel: document.getElementById('termsPanel')
 };
 
 // Ensure provided static dates are preserved; do not overwrite if already set in HTML.
@@ -13,25 +16,40 @@ if (lastPrivacyEl && !lastPrivacyEl.textContent.trim()) lastPrivacyEl.textConten
 if (lastDisputeEl && !lastDisputeEl.textContent.trim()) lastDisputeEl.textContent = '2025-10-23';
 
 function activatePanel(panelId, tabBtn) {
-  if (!panels[panelId]) return;
-  [privacyTab, disputeTab].forEach(btn => btn && btn.classList.remove('active'));
-  tabBtn && tabBtn.classList.add('active');
-  Object.values(panels).forEach(p => p && p.classList.remove('active'));
-  panels[panelId].classList.add('active');
+  // hide all tab buttons (by class) and remove active state
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  // add active to clicked tab button
+  if (tabBtn) tabBtn.classList.add('active');
+
+  // hide all panels
+  Object.values(panels).forEach(p => {
+    if (p) p.classList.remove('active');
+  });
+
+  // show requested panel (if exists)
+  const panel = panels[panelId];
+  if (panel) panel.classList.add('active');
+
+  // update bottom nav state if present
   document.querySelectorAll('.bn-item').forEach(b => b.classList.remove('active'));
   const bnMatch = document.querySelector(`.bn-item[data-target="${panelId}"]`);
   if (bnMatch) bnMatch.classList.add('active');
+
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 privacyTab && privacyTab.addEventListener('click', () => activatePanel('privacyPanel', privacyTab));
 disputeTab && disputeTab.addEventListener('click', () => activatePanel('disputePanel', disputeTab));
+termsTab && termsTab.addEventListener('click', () => activatePanel('termsPanel', termsTab));
 
 document.querySelectorAll('.bn-item').forEach(btn => {
   btn.addEventListener('click', () => {
     const target = btn.getAttribute('data-target');
-    if (target === 'privacyPanel') activatePanel('privacyPanel', privacyTab);
-    if (target === 'disputePanel') activatePanel('disputePanel', disputeTab);
+    if (target && panels[target]) {
+      // find corresponding tab button to set active style
+      const tabBtn = document.querySelector(`.tab[aria-controls="${target}"]`);
+      activatePanel(target, tabBtn);
+    }
   });
 });
 
