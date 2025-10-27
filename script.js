@@ -2,11 +2,13 @@
 const privacyTab = document.getElementById('privacyTab');
 const disputeTab = document.getElementById('disputeTab');
 const termsTab = document.getElementById('termsTab');
+const cancellationTab = document.getElementById('cancellationTab');
 
 const panels = {
   privacyPanel: document.getElementById('privacyPanel'),
   disputePanel: document.getElementById('disputePanel'),
-  termsPanel: document.getElementById('termsPanel')
+  termsPanel: document.getElementById('termsPanel'),
+  cancellationPanel: document.getElementById('cancellationPanel')
 };
 
 // Ensure provided static dates are preserved; do not overwrite if already set in HTML.
@@ -41,6 +43,7 @@ function activatePanel(panelId, tabBtn) {
 privacyTab && privacyTab.addEventListener('click', () => activatePanel('privacyPanel', privacyTab));
 disputeTab && disputeTab.addEventListener('click', () => activatePanel('disputePanel', disputeTab));
 termsTab && termsTab.addEventListener('click', () => activatePanel('termsPanel', termsTab));
+cancellationTab && cancellationTab.addEventListener('click', () => activatePanel('cancellationPanel', cancellationTab));
 
 document.querySelectorAll('.bn-item').forEach(btn => {
   btn.addEventListener('click', () => {

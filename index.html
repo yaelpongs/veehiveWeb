@@ -28,6 +28,7 @@
     <button class="tab active" role="tab" aria-selected="true" aria-controls="privacyPanel" id="privacyTab">Privacy Policy</button>
     <button class="tab" role="tab" aria-selected="false" aria-controls="disputePanel" id="disputeTab">Dispute Policy</button>
     <button class="tab" role="tab" aria-selected="false" aria-controls="termsPanel" id="termsTab">Terms of Service</button>
+    <button class="tab" role="tab" aria-selected="false" aria-controls="cancellationPanel" id="cancellationTab">Cancellation Policy</button>
   </nav>
 
   <main class="container">
@@ -171,9 +172,9 @@
           <h3>13) Timelines</h3>
           <ul>
             <li>Report issues: within [48] hours of pickup/return or discovery.</li>
-            <li>Submit evidence: within [X] days of case opening.</li>
-            <li>Platform decision: typically within [Y] business days after evidence is complete.</li>
-            <li>Mediation: initiated within [Z] days of decision if requested.</li>
+            <li>Submit evidence: within [7] days of case opening.</li>
+            <li>Platform decision: typically within [3] business days after evidence is complete.</li>
+            <li>Mediation: initiated within [5] days of decision if requested.</li>
             <li>Arbitration: filed within [30] days after failed mediation, subject to applicable limitation periods.</li>
           </ul>
 
@@ -299,12 +300,53 @@
         </div>
       </article>
     </section>
+
+    <section id="cancellationPanel" role="tabpanel" aria-labelledby="cancellationTab" class="panel">
+      <article class="card">
+        <header class="section-header">
+          <h2>Veehive Cancellation Policy</h2>
+          <p class="meta">Last updated: 2025-10-23</p>
+        </header>
+
+        <div class="policy-content">
+          <p>We understand plans can change. Please review our policy before cancelling a booking.</p>
+
+          <h3>For Renters</h3>
+          <ul>
+            <li><strong>Full Refund</strong><br>
+                Cancel at least 24 hours before the scheduled pickup time.</li>
+            <li><strong>Partial Refund</strong><br>
+                Cancel less than 24 hours before pickup, and up to 50% of the booking amount may be charged.</li>
+            <li><strong>No Refund</strong><br>
+                Once the trip has started or in case of no-show.</li>
+          </ul>
+
+          <h3>For Hosts</h3>
+          <ul>
+            <li><strong>Before Accepting</strong><br>
+                No payment is processed; the renter is not charged.</li>
+            <li><strong>After Accepting</strong><br>
+                If the host cancels, the renter will receive a full refund, and the host may face account penalties for repeated cancellations.</li>
+          </ul>
+
+          <h3>Refunds</h3>
+          <ul>
+            <li>Refunds are processed automatically through Stripe.</li>
+            <li>It may take 5–10 business days for the refund to appear, depending on your bank or card provider.</li>
+          </ul>
+
+          <h3>Exceptions</h3>
+          <p>In verified emergency or technical cases, our team may issue a full or partial refund upon review.</p>
+        </div>
+      </article>
+    </section>
   </main>
 
   <nav class="bottom-nav" aria-label="Primary">
     <button class="bn-item active" data-target="privacyPanel" aria-label="Privacy">Privacy</button>
     <button class="bn-item" data-target="disputePanel" aria-label="Disputes">Disputes</button>
     <button class="bn-item" data-target="termsPanel" aria-label="Terms">Terms</button>
+    <button class="bn-item" data-target="cancellationPanel" aria-label="Cancellation">Cancellation</button>
   </nav>
 
   <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">↑</button>
